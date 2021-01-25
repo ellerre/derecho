@@ -453,7 +453,7 @@ private:
 
     void receiver_function(subgroup_id_t subgroup_num, const SubgroupSettings& subgroup_settings,
                            const std::map<uint32_t, uint32_t>& shard_ranks_by_sender_rank,
-                           uint32_t num_shard_senders, DerechoSST& sst, unsigned int batch_size,
+                           uint32_t num_shard_senders, DerechoSST& sst,
                            const std::function<void(uint32_t, volatile char*, uint32_t)>& sst_receive_handler_lambda);
 
     void update_min_persisted_num(subgroup_id_t subgroup_num, const SubgroupSettings& subgroup_settings,
